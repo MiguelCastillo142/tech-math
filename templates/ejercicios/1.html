@@ -14,15 +14,24 @@
     <div style="text-align: center;">
         <img src="{% static 'img/1.png'%}" style="border-radius: 10px; width: 50%; height: auto; margin-left: auto; margin-right: auto; margin-top: 50px;">
     </div>
+    <div style="margin-top: 2%;"><p>Calcule el valor de x e y para que el área de la zona rectangular A sea máxima.</p></div>
+    
     <a id="boton-solucion" class="btn btn-primary" onclick="toggleSolucion()" style="margin-top: 5%;">Mostrar Solución</a>
     <div id="solucion" style="display: none; text-align: center; margin-top: 5%;">
-        <p>La respuesta es...</p>
-        <p>Aquí va la solución detallada del ejercicio.</p>
+            <iframe scrolling="no" title="1." src="https://www.geogebra.org/material/iframe/id/cppxz8uk/width/700/height/500/border/888888/sfsb/true/smb/true/stb/false/stbh/false/ai/true/asb/true/sri/true/rc/true/ld/true/sdz/true/ctl/false" width="700px" height="500px" style="border:0px;"> </iframe>
+            <p>Primero se desarrolla la expresión: 2400=x+y+x, Se reduce a 2400=2x+y</p>
+            <p>Se busca la y: y=2400-2x</p>
+            <p>Se multiplica los valores: x*(2400-2x^2)</p>
+            <p>Se hace el desarrollo, para que en la resoluciónN se encuentre el valor x que es 600</p>
+            <p>Ya con el valor 600, su área máxima sera de 720000 m2</p>
+            <p>Ya con el valor 600, su área máxima sera de 720000 m2</p>
+            <p>Y con los últimos datos, se encuentra el valor de y</p>
     </div>
 
 </div>
 {% block script%}
 <script>
+
     function toggleSolucion() {
         var solucion = document.getElementById('solucion');
         var boton = document.getElementById('boton-solucion');
